@@ -1,0 +1,228 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Page Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: grey;
+    margin: 0;
+}
+
+p {margin-bottom: 10px;}
+.container-fluid {
+    display: flex;
+    flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+    background-color: white;
+    padding: 1%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px; /* Ensure content is not touching the page edge */
+}
+
+/* Left Section (Profile, Certifications, Summary) */
+.left-section {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-right: 5px solid #099621;
+    flex: 1 1 30%; /* Default flex for large screens */
+    margin-right: 20px; /* Add space between sections on large screens */
+}
+
+.profile-picture {
+    width: 200px; /* Set fixed width */
+    height: 200px; /* Set fixed height */
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 5px solid #099621;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 1%;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #099621;
+    margin-top: 5%;
+    margin-bottom: 15px;
+}
+
+/* List Style */
+ul {
+    list-style-type: disc; /* Change from fill to disc */
+    padding: 10px;
+    margin: 10px 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* Right Section (Personal Info, Education, Skills, Experience) */
+.right-section {
+    flex: 1 1 60%; /* Right section takes 60% of space */
+    padding: 20px;
+}
+
+/* Button Styling */
+button {
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(8, 143, 14);
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%; /* Make button full-width */
+}
+
+button:hover {
+    background-color: rgb(125, 219, 243);
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Styles (max-width: 600px) */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container-fluid {
+        flex-direction: column; /* Stack left and right sections vertically */
+        padding: 5%;
+    }
+
+    .left-section {
+        flex: 1 1 100%; /* Full width on mobile */
+        border-right: none; /* Remove right border */
+        text-align: left; /* Align text to left */
+        margin-right: 0;
+    }
+
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+        margin-top: 10%;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .right-section {
+        flex: 1 1 100%; /* Full width on mobile */
+        margin-top: 20px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+/* Tablet Styles (min-width: 601px and max-width: 992px) */
+@media (min-width: 601px) and (max-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container-fluid {
+        flex-direction: row; /* Keep left and right sections side by side */
+    }
+
+    .left-section {
+        flex: 1 1 40%; /* Left section takes 40% of space */
+        padding: 15px;
+    }
+
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .right-section {
+        flex: 1 1 60%; /* Right section takes 60% of space */
+    }
+
+    button {
+        font-size: 18px;
+        padding: 14px;
+    }
+}
+
+/* Desktop Styles (min-width: 993px) */
+@media (min-width: 993px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container-fluid {
+        flex-direction: row; /* Left and right sections side by side */
+    }
+
+    .left-section {
+        flex: 1 1 30%; /* Left section takes 30% of space */
+        padding: 20px;
+    }
+
+    .profile-picture {
+        width: 250px;
+        height: 250px;
+      
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .right-section {
+        flex: 1 1 70%; /* Right section takes 70% of space */
+        padding: 20px;
+    }
+
+    button {
+        font-size: 20px;
+        width: auto;
+        padding: 16px;
+    }
+}

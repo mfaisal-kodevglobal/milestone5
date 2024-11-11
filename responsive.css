@@ -1,0 +1,165 @@
+/* Reset some default margins and paddings for mobile responsiveness */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    form {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    legend {
+        font-size: 18px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input, textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    #resume-display {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    #shareable-link-container {
+        font-size: 14px;
+    }
+
+    #shareable-link {
+        font-size: 14px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    form {
+        width: 80%;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    fieldset {
+        padding: 20px;
+    }
+
+    legend {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input, textarea {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 14px;
+    }
+
+    #resume-display {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    #shareable-link-container {
+        font-size: 16px;
+    }
+
+    #shareable-link {
+        font-size: 16px;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 993px) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    form {
+        width: 90%;
+        margin: 50px auto;
+        padding: 30px;
+    }
+
+    fieldset {
+        padding: 25px;
+    }
+
+    legend {
+        font-size: 22px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    input, textarea {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 16px;
+    }
+
+    #resume-display {
+        padding: 30px;
+        margin: 30px auto;
+    }
+
+    #shareable-link-container {
+        font-size: 18px;
+    }
+
+    #shareable-link {
+        font-size: 18px;
+    }
+}

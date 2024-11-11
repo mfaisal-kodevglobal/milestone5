@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume Biulder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+<!-- jQuery library -->
+<!-- <script src="../assets/js/jquery.min.js"></script> -->
+
+</head>
+<body>
+    <div class="container-fluid" style="display: block;">
+    
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <h1>Shareable Resume Biulder</h1>
+    <form id="resume-form">
+
+        <fieldset>
+            <div class="form-group">
+                <label for="profile-picture">Profile Picture:</label>
+                <input type="file" class="form-control" id="profile-picture" accept="image/*" />
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="form-group">
+                <label for="education">Education</label>
+                <textarea class="form-control" id="education" placeholder="Enter your education" rows="4" required></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="form-group">
+                <label for="experiance">Experiance</label>
+                <textarea class="form-control" id="experiance" placeholder="Enter your work experiance" rows="4" required></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="form-group">
+                <label for="skills">Skills</label>
+                <textarea  class="form-control" id="skills" placeholder="Enter your skills" rows="4" required></textarea>
+            </div>
+        </fieldset>
+
+        <button type="submit"><b>Generate Resume</b></button>
+    </form>
+    <br>
+
+
+
+    <br>
+    
+    <div id="shareable-link-container" style="display: none">
+        <h2>Shareable Link</h2>
+        <p>Here is your personalized link to view or update your resume:</p>
+        <a href="#" id="shareable-link" _blank></a>
+        <br>
+        <button id="download-pdf"><b>Download as PDF</b></button>
+
+    </div>
+</div>
+</div>
+</div>
+
+    <!--Dynamic and Editable Resume-->
+    <div id="resume-display" contenteditable="true">        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
